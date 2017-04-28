@@ -1,0 +1,679 @@
+<DOCTYPE html!>
+<html>
+<head>
+<script src="js/jquerysa.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+<link href="http://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet" type="text/css"/>
+<style>
+.navacc .navbar-header > button > span{
+background-color:#fff;
+}
+.navacc .navbar-header a{
+color:#fff;
+}
+</style>
+
+</head>
+<body>
+<div class="container-fluid navtopcontainer">
+<nav class="navbar navacc">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hlp">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="#" class="navbar-brand">Help <i class="fa fa-phone fanavtop" aria-hidden="true"></i> <span>(080)5555555</span> </a>
+</div>
+<div id="hlp" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right navtopright">
+<li><a href="#">My Account</a></li>
+<li><a href="#">Sign in</a></li>
+<li><a href="#">Create Account</a></li>
+
+</ul>
+</div>
+</div>
+
+
+</div>
+<nav class="navbar navbarecomm" data-spy="affix" data-offset-top="50">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="ecomibbtn navbar-toggle" data-toggle="collapse" data-target="#ecomlapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand navecombnd">e-commerce <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+</div>
+<div class="collapse navbar-collapse" id="ecomlapse">
+<ul class="nav navbar-nav navbtn">
+<li><a href="#">Browse</a></li>
+<li><a href="#">Shopping Cart</a></li>
+<li><a href="#">item Uploader</a></li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right navebtmright">
+<li class="dropdown">
+<button class="btn dropdown-toggle ecartbtn" data-toggle="dropdown" id="cartmenu"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart($104)<span class="caret"></span></button>
+<ul class="ecartdropmnu dropdown-menu col-sm-12" style="width:400px;" role="menu" aria-labelledby="cartmenu">
+<div class="poparrow"></div>
+<table class="cart-table">
+<tbody>
+<tr>
+<td style="width:15%;padding:5px;">
+<img src="pic/e-com/ec_guy.jpg" width="100%"/>
+</td>
+<td style="width:35%;padding-left:15px;">
+<div class="cart-desc">
+<p>	
+<a href="#">Denim T-shirt </a>
+<br>
+12 x 1.5 L 
+<br>
+$59
+</p>
+</div>
+
+</td>
+<td  style="width:15%;padding-left:5px;">
+X 2
+</td>
+<td style="width:15%;padding-left:5px;">
+$118
+</td>
+<td style="width:10%;padding-left:5px;">
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+</td>
+</tr>
+
+<tr>
+<td style="width:15%;padding:5px;">
+<img src="pic/e-com/women_jacket.jpg" width="100%"/>
+</td>
+<td style="width:35%;padding-left:15px;">
+<div class="cart-desc">
+<p>	
+<a href="#">Women Jacket </a>
+<br>
+12 x 1.5 L 
+<br>
+$37
+</p>
+</div>
+
+</td>
+<td style="width:15%;padding-left:5px;">
+X 2
+</td>
+<td style="width:15%;padding-left:5px;">
+$150
+</td>
+<td style="width:10%;padding-left:5px;">
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+</td>
+</tr>
+
+
+
+<tr>
+<td style="width:15%;padding:5px;">
+<img src="pic/e-com/jeans.jpg" width="100%"/>
+</td>
+<td style="width:35%;padding-left:15px;">
+<div class="cart-desc">
+<p>	
+<a href="#">Washed Jeans </a>
+<br>
+10 x 1.5 L 
+<br>
+$20
+</p>
+</div>
+
+</td>
+<td style="width:15%;padding-left:5px;">
+X 2
+</td>
+<td style="width:15%;padding-left:5px;">
+$120
+</td>
+<td style="width:10%;padding-left:5px;">
+<i class="fa fa-trash-o" aria-hidden="true"></i>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="tabcart-footer text-right" style="padding-left:10px;padding-right:10px;"> 
+<h4 class="text-right">Subtotal: $105</h4>
+<a class="btn btn-danger"><i class="fa fa-shopping-cart" aria-hidden="true"> <span class="vc">View Cart<span></i></a>
+<a class="btn btn-success">Checkout</a>
+
+</div>
+</ul>
+
+
+</li>
+
+</ul>
+</div>
+
+</div>
+
+
+</nav>
+<div id="section-ecomtag" class="container-fluid">
+<div class="ecomtag-container col-sm-12 text-center">
+<h1>Hello there! Its nice to meet you</h1>
+<p class="lead">Now go buy stuff so we get rich</p>
+
+
+</div>
+
+</div>
+<div id="section-ecombody" class="container-fluid">
+<div class="ecombody-container col-sm-12">
+
+<div class="col-sm-6">
+<div class="hpproduct">
+<a href="#"><img id="hpimg" src="pic/e-com/ec_guy.jpg"/>
+<span class="label label-Success labelhp">Handpicked product</span>
+</a>
+<div class="hpdescrip">
+<div class="col-sm-6">
+<h3 class="dj"><a href="#">Denim Jacket</a></h3>
+<p>Product code: ECOM1204</p>
+
+</div>
+<div class="col-sm-6 text-right">
+<h1>$34</h1>
+
+</div>
+
+</div>
+<div class="col-sm-12" style="padding-right:0px;padding-left:0px;">
+<form class="horizontal-form" role="form" style="overflow:hidden;margin-top:10px;">
+<div class="form-group" style="overflow:hidden;">
+<div class="col-xs-3 text-center" style="padding-left:0px;padding-right:0px;">
+<label for="quantity" id="qtity">Quantity</label>
+</div>
+<div class="col-xs-9">
+<div class="input-group">
+<span class="input-group-btn">
+<button class="btn btn-default">-</button>
+</span>
+<input id="quantity" type="text" value="1" name="quantity" data-bts-min="0" data-bts-max="100" data-bts-init-val="" data-bts-step="1" data-bts-decimal="0" data-bts-step-interval="100" data-bts-force-step-divisibility="round" data-bts-step-interval-delay="500" data-bts-booster="true" data-bts-boostat="10" data-bts-max-boosted-step="false" data-bts-mousewheel="true" data-bts-button-down-class="btn btn-default" data-bts-button-up-class="btn btn-default" class="form-control" style="display: block;"/>
+<span class="input-group-btn">
+<button class="btn btn-default bootstrap-touchspin-up">+</button>
+</span>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="form-group" style="overflow:hidden;">
+<div class="col-xs-3 text-center" style="padding-left:0px;padding-right:0px;">
+<label for="size" id="size">Size</label>
+</div>
+<div class="col-xs-9">
+
+<select class="form-control" id="sizedd">
+<option>Small</option>
+<option>Medium</option>
+<option>Large</option>
+<option>Extra large</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="form-group" style="overflow:hidden;">
+<div class="col-xs-2 text-right" style="padding-right:0px;padding-left:0px">
+<label for="color" id="color">Color</label>
+</div>
+<div class="col-xs-10" style="padding-left:65px;padding-right:65px;">
+<label class="checkbox-inline chbred">
+<input type="checkbox" class="chkbd1" value=""><span>Red<span>
+</label>
+
+<label class="checkbox-inline chbgreen">
+ <input type="checkbox" class="chkbd2" value=""><span>Green<span>
+</label>
+
+<label class="checkbox-inline chbblue">
+ <input type="checkbox" class="chkbd3" value=""><span>Blue<span>
+</label>
+
+</div>
+</div>
+
+</form>
+
+</div>
+<div class="buttoncontainer col-md-12 text-center">
+<button class="btn btn-lg btnatc"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Add to Cart</span></button>
+</div>
+
+
+<div class="drscontainer col-sm-12">
+
+<ul class="nav nav-tabs drsnav">
+<li class="active"><a href="#Details" data-toggle="tab">Details</a></li>
+<li><a href="#Reviews" data-toggle="tab">Reviews</a></li>
+<li><a href="#Shipping" data-toggle="tab">Shipping</a></li>
+
+</ul>
+<div class="tab-content drstabcontent">
+<div id="Details" class="tab-pane fade in active">
+<h2>Product Informartion</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.</p>
+
+</div>
+
+<div id="Reviews" class="tab-pane fade">
+<div class="media">
+<div class="media-left">
+<img src="pic/su2.jpg"  class="media-object" style="width:50px;height:50px;"/>
+</div>
+<div class="media-body revmb">
+      <div class="media-heading">
+	  <li>
+      <h4>John Doe</h4></li>
+	  <li><span> <i class="fa fa-clock-o" aria-value="hidden"></i> 3 min ago </span>
+	  </li>
+	  </div>
+      <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+	  
+</div>
+</div>
+
+<div class="media">
+<div class="media-left">
+<img src="pic/bg-overlay.jpg"  class="media-object" style="width:50px;height:50px;"/>
+</div>
+<div class="media-body revmb">
+      <div class="media-heading">
+	  <li>
+      <h4>Jane Smith</h4></li>
+	  <li><span> <i class="fa fa-clock-o" aria-value="hidden"></i> 5 min ago </span>
+	  </li>
+	  </div>
+      <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+	  
+</div>
+</div>
+
+</div>
+
+<div id="Shipping" class="tab-pane fade">
+<p>Standard 1-5 business days $7.95</p>
+
+<p>Two Day 2 business days $15</p>
+
+<p>Next Day 1 business day $30</p>
+
+
+</div>
+</div>
+
+
+
+
+<div class="drssocialcontainer col-sm-12 text-right">
+
+<ul class="drssocial list-unstyled">
+<li><h5>share</h5></li>
+<li><i class="fa fa-facebook" aria-hidden="true" href="#"></i></li>
+<li><i class="fa fa-twitter" aria-hidden="true" href="#"></i></li>
+<li><i class="fa fa-google-plus" aria-hidden="true" href="#"></i></li>
+</ul>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="mdlprocontainer col-sm-3">
+<div class="adscontainer col-sm-12">
+<div class="adshd col-sm-12" style="padding-bottom:10px;">
+<a href="#">Ads <span>Via Bootstrap</span></a>
+</div>
+<div class="col-sm-6">
+<img src="pic/ads_logo.png" class="media-object" style="width:100%;"/>
+</div>
+<div class="col-sm-6" style="padding-left:0px;padding-right:8px;">
+
+<a href="#">Company</a> quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent.
+</div>
+
+
+</div>
+
+<div class="productsale">
+<div class="psalehead">
+<img src="pic/e-com/marta_canga.jpg" style="width:100%;"/>
+
+<div class="saleoverlay">
+<button class="btn btn-success btnsoycart text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></br>
+<button class="btn btnsoymagnify text-center"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+
+</div>
+<div class="popoversaledescription">
+<div class="popover bottom">
+<div class="arrow"></div>
+<h5 class="popover-title"><a href="#">Primark Neon Scarf</a></h5>
+<div class="popover-content">
+Price: <span class="price">$231.99</span> <span class="label label-danger"> $120.75 </span></br>
+Tags:<a href="#"> Scarf, Accessories.</a>
+
+</div>
+</div>
+
+</div>
+
+<div class="ratingcontainer">
+<div class="col-sm-6">
+<i class="fa fa-calendar" aria-hidden="true"></i> 2 weeks ago
+
+</div>
+<div class="col-sm-6" style="padding-left:0px;padding-right:0px;">
+<div class="star_rating">
+<li><i class="fa fa-star pnsone" aria-hidden="true"></i></li>
+<li><i class="fa fa-star pnstwo" aria-hidden="true"></i></li>
+<li><i class="fa fa-star pnsthr" aria-hidden="true"></i></li>
+<li><i class="fa fa-star pnsfour" aria-hidden="true"></i></li>
+<li><i class="fa fa-star pnsfiv" aria-hidden="true"></i></li>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div class="productsale">
+<div class="psalehead">
+<img src="pic/e-com/women_jacket.jpg" style="width:100%;"/>
+
+<div class="saleoverlay">
+<button class="btn btn-success btnsoycart text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></br>
+<button class="btn btnsoymagnify text-center"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+
+</div>
+<div class="popoversaledescription">
+<div class="popover bottom">
+<div class="arrow"></div>
+<h5 class="popover-title"><a href="#">Womens Snowboard Jackets</a></h5>
+<div class="popover-content">
+Price: <span class="price">$231.99</span> <span class="label label-danger"> $120.75 </span></br>
+Tags:<a href="#"> jackets.</a>
+
+</div>
+</div>
+
+</div>
+
+<div class="ratingcontainer">
+<div class="col-sm-6">
+<i class="fa fa-calendar" aria-hidden="true"></i> 4 weeks ago
+
+</div>
+<div class="col-sm-6" style="padding-left:0px;padding-right:0px;">
+<div class="star_rating">
+<li><i class="fa fa-star starone" aria-hidden="true"></i></li>
+<li><i class="fa fa-star startwo" aria-hidden="true"></i></li>
+<li><i class="fa fa-star starthr" aria-hidden="true"></i></li>
+<li><i class="fa fa-star starfour" aria-hidden="true"></i></li>
+<li><i class="fa fa-star starfiv" aria-hidden="true"></i></li>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="lastcontainer col-sm-3">
+
+<div class="productsale">
+<div class="psalehead">
+<img src="pic/e-com/aud.jpg" style="width:100%;"/>
+
+<div class="saleoverlay">
+<button class="btn btn-success btnsoycart text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></br>
+<button class="btn btnsoymagnify text-center"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+
+</div>
+<div class="popoversaledescription">
+<div class="popover bottom">
+<div class="arrow"></div>
+<h5 class="popover-title"><a href="#">White Tees with B/W print</a></h5>
+<div class="popover-content">
+Price: <span class="price">$100</span> <span class="label label-danger"> $75.99 </span></br>
+Tags:<a href="#"> T-shirt.</a>
+
+</div>
+</div>
+
+</div>
+
+<div class="ratingcontainer">
+<div class="col-sm-6">
+<i class="fa fa-calendar" aria-hidden="true"></i> 1 months ago
+
+</div>
+<div class="col-sm-6" style="padding-left:0px;padding-right:0px;">
+<div class="rating">
+<div class="star_rating">
+<li><i class="fa fa-star wtone" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wttwo" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wtthr" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wtfour" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wtfiv" aria-hidden="true"></i></li>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="productsale">
+<div class="psalehead">
+<img src="pic/e-com/couple_leather.jpg" style="width:100%;"/>
+
+<div class="saleoverlay">
+<button class="btn btn-success btnsoycart text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></br>
+<button class="btn btnsoymagnify text-center"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+
+</div>
+<div class="popoversaledescription">
+<div class="popover bottom">
+<div class="arrow"></div>
+<h5 class="popover-title"><a href="#">Couple Leather Jackets</a></h5>
+<div class="popover-content">
+Price: <span class="price">$636.45</span> <span class="label label-danger"> $470 </span></br>
+Tags:<a href="#"> jackets.</a>
+
+</div>
+</div>
+
+</div>
+
+<div class="ratingcontainer">
+<div class="col-sm-6">
+<i class="fa fa-calendar" aria-hidden="true"></i> 2 months ago
+
+</div>
+<div class="col-sm-6" style="padding-left:0px;padding-right:0px;">
+<div class="rating">
+<div class="star_rating">
+<li><i class="fa fa-star cljone" aria-hidden="true"></i></li>
+<li><i class="fa fa-star cljtwo" aria-hidden="true"></i></li>
+<li><i class="fa fa-star cljthr" aria-hidden="true"></i></li>
+<li><i class="fa fa-star cljfour" aria-hidden="true"></i></li>
+<li><i class="fa fa-star cljfiv" aria-hidden="true"></i></li>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="productsale">
+<div class="psalehead">
+<img src="pic/e-com/jeans.jpg" style="width:100%;"/>
+
+<div class="saleoverlay">
+<button class="btn btn-success btnsoycart text-center"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></br>
+<button class="btn btnsoymagnify text-center"><i class="fa fa-search" aria-hidden="true"></i></button>
+</div>
+
+</div>
+<div class="popoversaledescription">
+<div class="popover bottom">
+<div class="arrow"></div>
+<h5 class="popover-title"><a href="#">Washed Jeans</a></h5>
+<div class="popover-content">
+Price: <span class="price">$120.19</span> <span class="label label-danger"> $100.99 </span></br>
+Tags:<a href="#"> jeans.</a>
+
+</div>
+</div>
+
+</div>
+
+<div class="ratingcontainer">
+<div class="col-sm-6">
+<i class="fa fa-calendar" aria-hidden="true"></i> 3 months ago
+
+</div>
+<div class="col-sm-6" style="padding-left:0px;padding-right:0px;">
+<div class="rating">
+<div class="star_rating">
+<li><i class="fa fa-star wjone" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wjtwo" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wjthr" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wjfour" aria-hidden="true"></i></li>
+<li><i class="fa fa-star wjfiv" aria-hidden="true"></i></li>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+<footer class="ecomfoot container-fluid">
+<div class="ecomfootinner col-sm-12">
+<div class="ecomfootdescription col-sm-3">
+<ul class="list-unstyled">
+<li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+<li> <h1>ecom</h1></li>
+</ul>
+<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+
+</div>
+
+<div class=" ecombestslr col-sm-3">
+<h3 class="text-center">BEST SELLER</h3>
+<div class="bestslrcontainer col-md-6">
+<a href="#"><img src="pic/e-com/best_seller1.jpg" style="width:100%;"/></a>
+<i class="fa fa-link" aria-hidden="true"></i>
+</div> 
+<div class="bestslrcontainer col-md-6">
+<a href="#"><img src="pic/e-com/best_seller2.jpg" style="width:100%;"/></a>
+<i class="fa fa-link" aria-hidden="true"></i>
+</div>
+
+<div class="bestslrcontainer col-md-6">
+<a href="#"><img src="pic/e-com/best_seller3.jpg" style="width:100%;"/></a>
+<i class="fa fa-link" aria-hidden="true"></i>
+</div>
+
+<div class="bestslrcontainer col-md-6">
+<a href="#"><img src="pic/e-com/best_seller4.jpg" style="width:100%;"/></a>
+<i class="fa fa-link" aria-hidden="true"></i>
+</div>
+</div>
+
+
+<div class="getintch col-sm-3">
+<h3>GET IN TOUCH</h3>
+
+<p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+</br>
+<p><i class="fa fa-map-marker" aria-hidden="true"></i> Mountain View, CA 94043</p>
+
+<p><i class="fa fa-phone" aria-hidden="true"> +00 (123) 456 78 90</i></p>
+
+<p><i class="fa fa-envelop" aria-hidden="true"></i><a href="#">info@domain.com</a></p>
+</div>
+
+
+<div class="fupd col-sm-3">
+<h3>FREE UPDATES</h3>
+
+<p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+</br>
+<form>
+<div class="input-group" style="background-color:rgba(0,0,0,0.4);">
+<input type="email" class="form-control" style="background-color:transparent;color:#fff;">
+<div class="input-group-btn">
+<button class="btn btn-success" type="submit"> submit </button>
+</div>
+</div>
+
+</form>
+</div>
+</div>
+
+</footer>
+<div class="footbtm">
+<div class="footbtminner col-sm-12">
+<div class="ecomcopyrgt col-md-6 text-center">
+<p>&copy; 2016 ecom, Saovick k biswas. All rights reserved.</p>
+</div>
+<div class="ecomextlnk col-md-6 text-center">
+<ul class="tph list-unstyled" >
+<li><a href="#">Terms</a></li>
+<li><a href="#">Privicy Policy</a></li>
+<li><a href="#">Help Center</a></li>
+
+</div>
+
+</div>
+
+</div>
+<script src="js/e-shop.js"></script>
+<link rel="stylesheet" href="e-shop.css"/>
+</body>
+</html>
